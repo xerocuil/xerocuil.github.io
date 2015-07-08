@@ -1,0 +1,11 @@
+# Site settings
+title: xerocuil.github.io
+email: mail@xerocuil.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is the notebook where I keep all things tech related. Perhaps you may find it useful.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://xerocuil.github.io" # the base hostname & protocol for your site
+github_username:  xerocuil
+
+# Build settings
+markdown: kramdown
