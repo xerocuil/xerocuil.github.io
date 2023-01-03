@@ -1,0 +1,18 @@
+---
+layout: main
+sidebar: sb_project.html
+---
+
+{% if page.released == NULL %}
+<span class="tag is-medium"  style="float: right; display: inline; margin: 16px 16px 0 0;">In development</span>
+{% endif %}
+
+<h1>{{ page.name }}</h1>
+
+
+
+<p>{{page.description }}</p>
+
+{% if page.demo %}<img class="demo" src="/assets/img/projects/{{ page.slug }}/{{ page.demo }}">{% endif %}
+
+{{ content }}

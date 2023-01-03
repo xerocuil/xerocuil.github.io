@@ -1,23 +1,19 @@
 ---
+title: Projects
 layout: default
 ---
 
-<div class="home">
+{% assign project_list = site.projects | sort: 'updated' | reverse %}
+{% for p in project_list %}
+<div class="columns project-listing">
+  <div class="column is-2">
+    <img class="project-thumb" src="/assets/img/projects/{{ p.slug }}/{{ p.img }}">
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="column is-10">
+    <h4><a href="{{ p.url }}">{{ p.name }}</a></h4>
+    <span>{{ p.description }}</br>
+    <!-- <em>{{ p.platform }}</em></span> -->
+  </div>
 </div>
+{% endfor %}

@@ -1,0 +1,1 @@
+[Grey Mist Palette](https://lospec.com/palette-list/grey-mist)

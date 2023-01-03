@@ -1,0 +1,24 @@
+<!-- Main layout -->
+{% include head.html %}
+
+{% include header.html %}
+
+<div class="container">
+  <div class="columns">
+    <div id="content" class="column is-three-quarters">
+      {{ content }}
+    </div>
+
+    <div id="sidebar" class="column">
+      {% if layout.sidebar %}
+        {% include {{ layout.sidebar }} %}
+      {% endif %}
+
+      {% if page.sidebar %}
+        {% include {{ page.sidebar }} %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}

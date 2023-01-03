@@ -1,11 +1,42 @@
 # Site settings
-title: xerocuil.github.io
-email: mail@xerocuil.com
-description: > # this means to ignore newlines until "baseurl:"
-  This is the notebook where I keep all things tech related. Perhaps you may find it useful.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://xerocuil.github.io" # the base hostname & protocol for your site
-github_username:  xerocuil
+title: "@xerocuil"
+description: A collection of development notes centered mostly around Linux/Python.
+url: "http://xerocuil.github.io"
+username:  xerocuil
+github_url:  https://github.com/xerocuil
+twitter_url:  https://twitter.com/xerocuil
 
 # Build settings
 markdown: kramdown
+
+collections:
+  projects:
+    output: true
+  gists:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "gists"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude: [gems]
+
+sass:
+  style: compressed
