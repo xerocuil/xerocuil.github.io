@@ -3,7 +3,7 @@ name:  "Empr"
 slug: empr
 version:
 platform: Linux
-language: Python, Bash
+language: shell,python
 description: Video game library manager.
 # download_lin: https://github.com/xerocuil/pong/releases/download/v0.3.0/pong-v0.3.0-linux.AppImage
 # download_win: https://github.com/xerocuil/pong/releases/download/v0.3.0/pong-v0.3.0-win.zip

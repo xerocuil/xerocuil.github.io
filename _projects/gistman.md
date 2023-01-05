@@ -3,7 +3,7 @@ name:  "Gist Manager"
 slug: gistman
 version:
 platform: Linux
-language: Bash
+language: shell
 description: Library based bash script management.
 download: https://gist.githubusercontent.com/xerocuil/ddc1d655dc6d151abc39b71936a40b20/raw/f1f54d8354fc54262b0da8ee292ae2273248ae1b/gistman.sh
 source: https://gist.github.com/xerocuil/ddc1d655dc6d151abc39b71936a40b20

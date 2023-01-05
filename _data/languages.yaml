@@ -1,0 +1,15 @@
+- name: Shell
+  slug: shell
+  description: Command language scripting for the GNU operating system.
+
+- name: Lua
+  slug: lua
+  description: Lua is a powerful, efficient, lightweight, embeddable scripting language. It supports procedural programming, object-oriented programming, functional programming, data-driven programming, and data description.
+
+# - name: PHP
+#   slug: php
+#   description: PHP is a general-purpose scripting language geared toward web development.
+
+- name: Python
+  slug: python
+  description: Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.

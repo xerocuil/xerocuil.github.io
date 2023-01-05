@@ -1,0 +1,16 @@
+---
+title: About
+layout: default
+---
+
+<p>I am a developer from northeast Ohio that specializes in creating custom applications for small to mid-tier organizations.
+
+This website is a collection of my projects, scripts, and development notes.</p>
+
+<p><strong>Languages</strong></p>
+
+{% assign lang = site.data.languages | sort: "name" %}
+{% for l in lang %}
+<p><a href="{% link languages/{{ l.slug }}.md %}"><img class="icon" src="/assets/img/languages/{{ l.slug }}.svg"> {{ l.name }}</a></p>
+{% endfor %}
+

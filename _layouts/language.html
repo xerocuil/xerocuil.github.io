@@ -1,0 +1,30 @@
+---
+layout: main
+---
+
+{% assign lang = site.data.languages | where: "slug", page.slug %}
+
+{% for l in lang %}
+<h1>{{ l.name }}</h1>
+<p>{{ l.description }}</p>
+
+<table class="table">
+  <thead>
+    <th>Project</th>
+    <th>Description</th>
+  </thead>
+  <tbody>
+    {% for p in site.projects %}
+      {% if p.language contains l.slug %}
+      <tr>
+      	<td><a href="{% link _projects/{{ p.slug }}.md %}">{{ p.name }}</a></td>
+        <td>{{ p.description }}</td>
+      </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
+
+{{ content }}
+

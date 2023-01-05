@@ -3,7 +3,7 @@ name:  "Pong"
 slug: pong
 version: 0.3.0
 platform: Linux, Windows
-language: Lua
+language: lua
 description: A Pong clone created with LÖVE/Lua.
 download_lin: https://github.com/xerocuil/pong/releases/download/v0.3.0/pong-v0.3.0-linux.AppImage
 download_win: https://github.com/xerocuil/pong/releases/download/v0.3.0/pong-v0.3.0-win.zip

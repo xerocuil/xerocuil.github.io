@@ -7,3 +7,11 @@ layout: main
 <p>{{ page.description }}</p>
 
 {{ content }}
+
+{% if page.hide_preview == False %}
+<hr>
+<p><strong>Code</strong></p>
+<script src="{{ page.source }}.js"></script>
+{% endif %}
+
+

@@ -7,5 +7,14 @@ source: https://gist.github.com/xerocuil/05516a42793752c6cd3ef20e0eb477b0
 updated: 2022-06-14
 ---
 
-**Command**  
-`screenshot`
+**Usage**
+
+`screenshot <option>`
+
+Options			| Description
+:------			| :----------
+`fullscreen`	| Take screenshot of entire screen
+`region`		| Take screenshot of selected region
+`window`		| Take screenshot of selected window
+
+If no option is given, `window` will be the default option. Screenshots will be saved to `$HOME/Screenshots`.

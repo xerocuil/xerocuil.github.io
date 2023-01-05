@@ -3,7 +3,7 @@ name:  "PaletteBox"
 slug: palettebox
 version:
 platform: Linux
-language: Bash
+language: shell
 description: Bash script to convert a GIMP palette file into html/json/svg files.
 # download:
 # download_lin:

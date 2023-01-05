@@ -3,7 +3,7 @@ name:  "PyWinCLI"
 slug: pywincli
 version: 0.2
 platform: Linux
-language: Bash, CMD
+language: shell
 description: PyWinCLI is a CLI for managing Python environments in a Wine prefix.
 download: https://github.com/xerocuil/PyWinCLI/archive/refs/tags/v0.2.zip
 source: https://github.com/xerocuil/PyWinCLI

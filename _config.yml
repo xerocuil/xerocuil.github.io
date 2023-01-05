@@ -10,17 +10,23 @@ twitter_url:  https://twitter.com/xerocuil
 markdown: kramdown
 
 collections:
-  projects:
-    output: true
   gists:
     output: true
+  projects:
+    output: true
+  
 
 defaults:
   - scope:
       path: ""
       type: "gists"
     values:
-      layout: "default"
+      layout: "gist"
+  - scope:
+      path: ""
+      type: "languages"
+    values:
+      layout: "language"
   - scope:
       path: ""
       type: "projects"
