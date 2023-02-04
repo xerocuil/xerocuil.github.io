@@ -1,18 +1,25 @@
 ---
-layout: main
-sidebar: sb_project.html
+layout: page
 ---
 
-{% if page.released == NULL %}
-<span class="tag is-medium"  style="float: right; display: inline; margin: 16px 16px 0 0;">In development</span>
-{% endif %}
+<div class="container">
+  <div id="content">
+    <div id="main">
+      {% if page.released == NULL %}
+      <span class="tag is-medium"  style="float: right; display: inline; margin: 16px 16px 0 0;">In development</span>
+      {% endif %}
 
-<h1>{{ page.name }}</h1>
+      <h2>{{ page.name }}</h2>
 
+      <p>{{page.description }}</p>
 
+      {% if page.demo %}<img class="demo" src="/assets/img/projects/{{ page.slug }}/{{ page.demo }}">{% endif %}
 
-<p>{{page.description }}</p>
+      {{ content }}
+    </div>
 
-{% if page.demo %}<img class="demo" src="/assets/img/projects/{{ page.slug }}/{{ page.demo }}">{% endif %}
-
-{{ content }}
+    <div id="sidebar">
+      {% include sb_project.html %}
+    </div>
+  </div>
+</div>

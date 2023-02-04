@@ -1,10 +1,7 @@
-<div class="card">
-  <div class="card-title"><span>Contents</span></div>
-  <div class="card-content">
-    <dl>
-      {% for g in site.gists %}
-      <dt><a href="#{{ g.name }}">{{ g.name }}</a></dt>
-      {% endfor %}
-    </dl>
-  </div>
-</div>
+<span><strong>Contents</strong></span>
+
+<dl>
+  {% for g in site.gists %}
+  <dt><a href="#{{ g.name }}">{{ g.name }}</a></dt>
+  {% endfor %}
+</dl>

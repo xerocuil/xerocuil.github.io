@@ -1,19 +1,21 @@
 ---
 title: Projects
 layout: main
+sidebar: recent_gists.html
 ---
-
 {% assign project_list = site.projects | sort: 'updated' | reverse %}
-{% for p in project_list %}
-<div class="columns project-listing">
-  <div class="column is-2">
-    <img class="project-thumb" src="/assets/img/projects/{{ p.slug }}/{{ p.img }}">
-  </div>
 
-  <div class="column is-10">
-    <h4><a href="{{ p.url }}">{{ p.name }}</a></h4>
-    <span>{{ p.description }}</br>
-    <!-- <em>{{ p.platform }}</em></span> -->
-  </div>
+<h2>Recent Projects</h2>
+<div id="projects">
+  {% for p in project_list %}
+    <div class="project-thumb">
+      <img src="/assets/img/projects/{{ p.slug }}/{{ p.img }}">
+    </div>
+
+    <div class="project-desc">
+      <h4><a href="{{ p.url }}">{{ p.name }}</a></h4>
+      <span>{{ p.description }}</br>
+      <!-- <em>{{ p.platform }}</em></span> -->
+    </div>
+  {% endfor %}
 </div>
-{% endfor %}

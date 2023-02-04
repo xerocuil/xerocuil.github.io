@@ -9,8 +9,8 @@ source: https://gist.github.com/xerocuil/2d29bce98b5a4dafa4ffd913c43c7ec7
 
 **Usage**
 
-Command     | Description
-:------     | :----------
+Command       | Description
+:------       | :----------
 `git.c <msg>` | Commit with \<msg\> and timestamp.
 `git.l <n>`   | Show last \<n\> commits (Default: 10)
 `git.p`       | Push to origin

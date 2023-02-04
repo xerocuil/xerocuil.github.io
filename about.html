@@ -3,14 +3,23 @@ title: About
 layout: default
 ---
 
+
 <p>I am a developer from northeast Ohio that specializes in creating custom applications for small to mid-tier organizations.
 
 This website is a collection of my projects, scripts, and development notes.</p>
 
 <p><strong>Languages</strong></p>
 
+<table class="list">
 {% assign lang = site.data.languages | sort: "name" %}
 {% for l in lang %}
-<p><a href="/languages/{{ l.slug }}.html"><img class="icon" src="/assets/img/languages/{{ l.slug }}.svg"> {{ l.name }}</a></p>
+<tr>
+  <td class="icon">
+    <img src="/assets/img/languages/{{ l.slug }}.svg">
+  </td>
+  <td>
+    <a href="/languages/{{ l.slug }}.html"> {{ l.name }}</a>
+  </td>
+</tr>
 {% endfor %}
-
+</table>

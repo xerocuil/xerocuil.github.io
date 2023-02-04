@@ -1,81 +1,77 @@
-<div class="card">
-  {% if page.img %}
-  <div class="card-image">
-    <figure class="image is-1by1">
-      <img class="project-thumb" src="/assets/img/projects/{{ page.slug }}/{{ page.img }}">
-    </figure>
-  </div>
-  {% endif %}
-
-  <table class="sidebar table is-fullwidth">
-    <tbody>
-      {% if page.version %}
-      <tr>
-        <th>Version:</th>
-        <td class="has-text-right">{{ page.version }}</td>
-      </tr>
-      {% endif %}
-
-      {% if page.platform %}
-      <tr>
-        <th>Platform:</th>
-        <td class="has-text-right">{{ page.platform }}</td>
-      </tr>
-      {% endif %}
-
-      {% if page.language %}
-      <tr>
-        <th>Language:</th>
-        <td class="has-text-right">{{ page.language }}</td>
-      </tr>
-      {% endif %}
-      
-
-      {% if page.released %}
-      <tr>
-        <th>Released:</th>
-        <td class="has-text-right">{{ page.released }}</td>
-      </tr>
-      {% endif %}
-
-      {% if page.updated %}
-      <tr>
-        <th>Updated:</th>
-        <td class="has-text-right">{{ page.updated }}</td>
-      </tr>
-      {% endif %}
-
-      {% if page.download %}
-      <tr>
-        <td colspan="2">
-          <a href="{{ page.download }}">Download</a>
-        </td>
-      </tr>
-      {% endif %}
-
-      {% if page.download_lin %}
-      <tr>
-        <td colspan="2">
-            <a href="{{ page.download_lin }}">Download (Linux)</a>
-        </td>
-      </tr>
-      {% endif %}
-
-      {% if page.download_win %}
-      <tr>
-        <td colspan="2">
-            <a href="{{ page.download_win }}">Download (Windows)</a>
-          </td>
-        </tr>
-      {% endif %}
-
-      {% if page.source %}
-      <tr>
-        <td colspan="2">
-          <a href="{{ page.source }}">View Source</a>
-        </td>
-      </tr>
-      {% endif %}
-    </tbody>
-  </table>
+{% if page.img %}
+<div class="project-img">
+  <img src="/assets/img/projects/{{ page.slug }}/{{ page.img }}">
 </div>
+{% endif %}
+
+<table class="sidebar">
+  <tbody>
+    {% if page.version %}
+    <tr>
+      <th>Version:</th>
+      <td class="has-text-right">{{ page.version }}</td>
+    </tr>
+    {% endif %}
+
+    {% if page.platform %}
+    <tr>
+      <th>Platform:</th>
+      <td class="has-text-right">{{ page.platform }}</td>
+    </tr>
+    {% endif %}
+
+    {% if page.language %}
+    <tr>
+      <th>Language:</th>
+      <td class="has-text-right">{{ page.language }}</td>
+    </tr>
+    {% endif %}
+    
+
+    {% if page.released %}
+    <tr>
+      <th>Released:</th>
+      <td class="has-text-right">{{ page.released }}</td>
+    </tr>
+    {% endif %}
+
+    {% if page.updated %}
+    <tr>
+      <th>Updated:</th>
+      <td class="has-text-right">{{ page.updated }}</td>
+    </tr>
+    {% endif %}
+
+    {% if page.download %}
+    <tr>
+      <td colspan="2">
+        <a href="{{ page.download }}">Download</a>
+      </td>
+    </tr>
+    {% endif %}
+
+    {% if page.download_lin %}
+    <tr>
+      <td colspan="2">
+          <a href="{{ page.download_lin }}">Download (Linux)</a>
+      </td>
+    </tr>
+    {% endif %}
+
+    {% if page.download_win %}
+    <tr>
+      <td colspan="2">
+          <a href="{{ page.download_win }}">Download (Windows)</a>
+        </td>
+      </tr>
+    {% endif %}
+
+    {% if page.source %}
+    <tr>
+      <td colspan="2">
+        <a href="{{ page.source }}">View Source</a>
+      </td>
+    </tr>
+    {% endif %}
+  </tbody>
+</table>

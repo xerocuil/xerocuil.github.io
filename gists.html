@@ -7,21 +7,8 @@ sidebar: sb_gists.html
 {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
 
 {% for g in site.gists %}
-<div class="columns">
-  <div class="column">
-    <h4><a id="{{ g.name}}" href="{{ g.url }}">{{ g.name }}</a></h4>
-    <p>{{ g.description }}</p>
-    
-    <article>
-      {{ g.content }}
-    </article>
-  </div>
+<div class="gist">
+  <h4><a id="{{ g.name}}" href="{{ g.url }}">{{ g.name }}</a></h4>
+  <p>{{ g.description }}</p>
 </div>
-
-<div class="columns">
-  <div class="column">
-    <hr>
-  </div>
-</div>
-
 {% endfor %}

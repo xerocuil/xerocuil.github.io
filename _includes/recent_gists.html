@@ -1,0 +1,8 @@
+{% assign gists = site.gists | sort: 'updated' | reverse %}
+
+<h2>Recent Gists</h2>
+<ul class="recent-gists">
+  {% for g in gists %}
+  <li><a href="{{ g.url }}">{{ g.name }}</a></li>
+  {% endfor %}
+</ul>
