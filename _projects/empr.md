@@ -10,7 +10,7 @@ description: Video game library manager.
 source: https://github.com/xerocuil/empr
 demo: screenshot-001.jpg
 img: icon.png
-updated: 2022-11-10
+updated: 2023-04-18
 ---
 
 **\*In development\***
