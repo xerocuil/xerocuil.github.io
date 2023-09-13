@@ -7,15 +7,17 @@ sidebar: recent_gists.html
 
 <h2>Recent Projects</h2>
 <div id="projects">
-  {% for p in project_list %}
-    <div class="project-thumb">
-      <img src="/assets/img/projects/{{ p.slug }}/{{ p.img }}">
-    </div>
+    {% for p in project_list %}
+    <div class="project">
+        <div class="project-thumb">
+            <img src="/assets/img/projects/{{ p.slug }}/{{ p.img }}">
+        </div>
 
-    <div class="project-desc">
-      <h4><a href="{{ p.url }}">{{ p.name }}</a></h4>
-      <span>{{ p.description }}</br>
-      <!-- <em>{{ p.platform }}</em></span> -->
+        <div class="project-desc">
+            <h4><a href="{{ p.url }}">{{ p.name }}</a></h4>
+            <span>{{ p.description }}</span>
+            <!-- <em>{{ p.platform }}</em> -->
+        </div>
     </div>
-  {% endfor %}
+    {% endfor %}
 </div>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666667 8.4666665"
+   version="1.1"
+   id="svg1346"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1343" />
+  <g
+     id="layer1"
+     transform="translate(-146.04298,-45.1515)">
+    <g
+       id="layer2-3"
+       transform="matrix(0.12382383,0,0,0.12382383,144.05525,42.531824)"
+       style="display:inline">
+      <path
+         style="display:inline;fill:#e1e4dc;stroke-width:6.35;stroke-linecap:square;paint-order:stroke fill markers;stop-color:#000000"
+         id="path1274"
+         d="m 94.944475,56.440346 a 17.094179,16.933325 0 1 0 0,3e-5 l -17.094179,-3e-5 z"
+         transform="matrix(1.9999999,0,0,1.9999999,-105.45934,-57.535855)" />
+      <g
+         id="g667-7"
+         transform="matrix(0.44333447,0,0,0.44333447,21.78056,24.442478)">
+        <path
+           d="M 81.532007,21.478158 64.485307,47.024979 46.855813,21.478158 H 18.007553 L 50.061174,68.270548 16.696265,117.93044 H 45.398827 L 64.631005,89.51612 84.154576,117.93044 H 113.14854 L 78.909437,68.140209 110.38027,21.478158 Z"
+           style="font-size:50.8px;line-height:1.25;font-family:'The Bold Font';-inkscape-font-specification:'The Bold Font';display:inline;fill:#2e2c2f;stroke-width:0.717739"
+           id="path462-4-5" />
+        <path
+           d="M 81.532007,21.478158 C 72.02922,35.715545 62.534228,49.958143 53.024408,64.19083 c 2.902228,-4.419545 5.875138,-8.793831 8.730848,-13.24325 -3.940049,5.745688 -7.799722,11.546229 -11.694082,17.322968 11.349938,16.563271 22.720806,33.112172 34.093402,49.659892 9.664655,0 19.329314,0 28.993964,0 C 101.73551,101.3337 90.322471,84.736953 78.909437,68.140209 89.399715,52.586192 99.889992,37.032175 110.38027,21.478158 c -9.61609,0 -19.232175,0 -28.848263,0 z"
+           style="font-size:50.8px;line-height:1.25;font-family:'The Bold Font';-inkscape-font-specification:'The Bold Font';display:inline;fill:#475b63;stroke-width:0.717739"
+           id="path501-3" />
+      </g>
+    </g>
+  </g>
+</svg>
