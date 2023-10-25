@@ -4,18 +4,25 @@ slug: pyrps
 version: 0.0.3
 platform: Linux
 language: python
-description: PyRPS (Python RolePlaying System) is a table-top RPG aid with modular game engines.
+description: PyRPS (Python RolePlaying System) is a modular table-top RPG DM's companion.
 # download_lin:
 # download_win:
 source: https://github.com/xerocuil/pyrps
-# demo: pong_screenshot.jpg
+demo: screenshot.jpg
 img: icon.png
-# released: 2022-07-22
-updated: 2023-09-12
+# released: 2023-10-24
+updated: 2023-10-24
 ---
 
-PyRPS is a role-playing management system that is currently compatible with Dungeons & Dragons 5th edition. Planned support for other RPG systems includes:
+- Manage campaigns and quests.
+- Roll new characters.
+- Create ambience with built-in soundboard.
+- Use existing game rules (such as D&D or GURPS) or create your own table-top game.
 
-- GURPS
-- Pathfinder
-- RPG Maker
+![PyRPS](docs/screenshot.jpg)
+
+## Dependencies
+
+- [Django](https://www.djangoproject.com/)
+- [Howler.js](https://howlerjs.com/)
+

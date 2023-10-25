@@ -10,3 +10,7 @@ updated: 2022-06-14
 **Usage**
 
 `boxwine <path_to_exe>`
+
+**Note**
+
+Boxwine will look for a `docs` directory in the path that contains the installer file, if an `icon.png` file is present, this will be used as the icon for the desktop configuration file that will be created for the start menu.

@@ -9,24 +9,24 @@ $default-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "O
 $default-monospace: monospace !default
 
 @font-face
-    font-family: 'DroidSansMono'
-    src: url('/assets/fonts/DroidSansMono.woff2') format('woff2'), url('/assets/fonts/DroidSansMono.woff') format('woff')
-    font-weight: normal
-    font-style: normal
-    font-display: swap
+  font-family: 'DroidSansMono'
+  src: url('/assets/fonts/DroidSansMono.woff2') format('woff2'), url('/assets/fonts/DroidSansMono.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
 
 // @font-face
-//     font-family: videotype
-//     src: url(/assets/font/videotype.woff)
+//   font-family: videotype
+//   src: url(/assets/font/videotype.woff)
 
 // Global Variables
 $base: 1.6rem
-$default-border: 1px solid $highlight-color-alpha
+$default-border: 0.1rem solid $highlight-color-alpha
 
 // Elements
 
 html
-    font-size: 62.5%
+  font-size: 62.5%
 
 body,
 button,
@@ -34,205 +34,211 @@ input,
 optgroup,
 select,
 textarea
-    font-family: $default-sans-serif
-    font-size: $base
+  font-family: $default-sans-serif
+  font-size: $base
 
 a
-    color: $link-color
-    text-decoration: none
+  color: $link-color
+  text-decoration: none
 
 a:hover
-    color: $accent-color
+  color: $accent-color
 
 body
-    color: $primary-color
-    background-color: white
+  color: $primary-color
+  background-color: white
 
 dl
-    dt
-        padding-bottom: 0.4rem
-        font-size: 1.4rem
-        font-family: 'DroidSansMono'
+  dt
+    padding-bottom: 0.4rem
+    font-size: 1.4rem
+    font-family: 'DroidSansMono'
 
 footer
-    display: flex
-    justify-content: space-between
-    border-top: $default-border
-    div
-        padding-top: 1.6rem
+  display: flex
+  justify-content: space-between
+  border-top: $default-border
+  div
+    padding-top: 1.6rem
 
 h1, h2, h3, h4, h5, h6
-    font-family: 'DroidSansMono'
-    margin-top: 0
-    margin-bottom: 1.8rem
-    font-weight: 300
+  font-family: 'DroidSansMono'
+  margin-top: 0
+  margin-bottom: 1.8rem
+  font-weight: 300
 
 h1, h2
-    padding-bottom: 0.4em
-    border-bottom: $default-border
+  padding-bottom: 0.4em
+  border-bottom: $default-border
 
 h1
-    font-size: 2.8rem
-    font-weight: 500
+  font-size: 2.8rem
+  font-weight: 500
 h2
-    font-size: 2.6rem
-    font-weight: 500
+  font-size: 2.6rem
+  font-weight: 500
 h3
-    font-size: 2.4rem
+  font-size: 2.4rem
 h4
-    font-size: 2.2rem
+  font-size: 2.2rem
 h5
-    font-size: 2.0rem
+  font-size: 2.0rem
 h6
-    font-size: 1.8rem
+  font-size: 1.8rem
+
+hr
+  border: 0
+  border-top: $default-border
 
 p
-    margin-bottom: 1.2rem
-    line-height: 2.0
+  margin-bottom: 1.2rem
+  line-height: 2.0
 
 table
-    width: 100%
-    margin-bottom: 2.0rem
-    border-collapse: collapse
-    tr
-        td, th
-            border: none
-            margin: 0
-            padding: 8px 0
+  width: 100%
+  margin-bottom: 2.0rem
+  border-collapse: collapse
+  tr
+    td, th
+      border: none
+      margin: 0
+      padding: 8px 0
 
 table.sidebar
-    th
-        text-align: left
-    td
-        text-align: right
+  th
+    text-align: left
+  td
+    text-align: right
 
 strong
-    font-family: 'DroidSansMono'
-    
+  font-family: 'DroidSansMono'
+  
 ul
-    margin-bottom: 1.2rem
-    padding: 0
-    li
-        margin-left: $base
-        padding-left: $base / 4
-        list-style: disc
+  margin-bottom: 1.2rem
+  padding: 0
+  li
+    margin-left: $base
+    padding-left: $base / 4
+    list-style: disc
 
 #content
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    gap: $base *2
-    #main
-        flex: 60%
-    #sidebar
-        max-width: 20.0rem
-        flex-basis: auto
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  gap: $base *2
+  #main
+    flex: 60%
+  #sidebar
+    max-width: 20.0rem
+    flex-basis: auto
 
 #projects
-    .project
-        padding: 1.2em 0
-        border-bottom: $default-border
-        display: grid
-        grid-template-columns: 1fr 8fr
-        column-gap: $base * 2
-        row-gap: $base * 2
-        .project-thumb
-            img
-                width: 100%
-                // background-color: $accent-color-alpha
-                // border-radius: $base / 2
+  .project
+    padding: 1.2em 0
+    border-bottom: $default-border
+    display: grid
+    grid-template-columns: 1fr 8fr
+    column-gap: $base * 2
+    row-gap: $base * 2
+    .project-thumb
+      img
+        width: 6.4rem
+        height: auto
+        // background-color: $accent-color-alpha
+        // border-radius: $base / 2
 
 #site-header
-    display: grid
-    grid-template-columns: 1fr 1fr
-    align-items: center
-    border-bottom: $default-border
-    #site-title
-        padding: 2.4rem 0
-        margin-bottom: 0
-        line-height: 1
-        font-family: 'DroidSansMono'
+  display: grid
+  grid-template-columns: 1fr 1fr
+  align-items: center
+  border-bottom: $default-border
+  #site-title
+    padding: 2.4rem 0
+    margin-bottom: 0
+    line-height: 1
+    font-family: 'DroidSansMono'
 
 #site-icon
-    height: 28px
-    width: auto
+  height: 28px
+  width: auto
 
 #site-navbar
-    // display: none
-    font-size: 1.0rem
-    justify-self: end
-    font-family: 'DroidSansMono'
-    text-transform: lowercase
-    ul
-        display: flex
-        li
-            list-style: none
-    #menu
-        width: $base * 2
+  // display: none
+  font-size: 1.0rem
+  justify-self: end
+  font-family: 'DroidSansMono'
+  text-transform: lowercase
+  ul
+    display: flex
+    li
+      list-style: none
+  #menu
+    width: $base * 2
 
 #site-title
-    font-size: $base * 1.5
+  font-size: $base * 1.5
 
 .container
-    margin: 0 auto 2.4rem auto
-    max-width: 960px
-    padding: 0 1.6rem
+  margin: 0 auto 2.4rem auto
+  max-width: 960px
+  padding: 0 1.6rem
 
 .demo
-    width: 100%
-    height: auto
-    margin: 0 auto
+  width: 64rem
+  height: auto
+  margin: 0 auto
 
 .gist
-    border-bottom: $default-border
-    margin-bottom: 1.6rem
+  border-bottom: $default-border
+  margin-bottom: 1.6rem
 
 .icon
-    img
-            width: 1.6rem
-            height: auto
+  img
+      width: 1.6rem
+      height: auto
 
 .project-img
-    width: 20.0rem
-    height: 20.0rem
-    background-color: $accent-color-alpha
-    img
-        margin: 10%
-        width: 80%
-        height: 80%
+  width: 20.0rem
+  height: 20.0rem
+  border: $default-border
+  background-image: linear-gradient(to bottom right, $background-color-alpha, $background-color)
+  img
+    margin: 10%
+    width: 80%
+    height: 80%
 
 table.list
-    width: auto
-    td
-        border: none
-    td.icon
-        width: 1.6rem
-        img
-            width: 100%
-            height: auto
+  width: auto
+  td
+    border: none
+  td.icon
+    width: 1.6rem
+    img
+      width: 100%
+      height: auto
 
 ul.recent-gists
+  margin: 0
+  padding: 0
+  display: grid
+  li
     margin: 0
     padding: 0
-    display: grid
-    li
-        margin: 0
-        padding: 0
-        font-family: 'DroidSansMono'
-        line-height: 1.8
-        list-style: none
-        border-top: 0.5px solid $accent-color-alpha
-    li:nth-child(1)
-        border-top: none
+    font-family: 'DroidSansMono'
+    line-height: 1.8
+    list-style: none
+    border-top: 0.5px solid $accent-color-alpha
+  li:nth-child(1)
+    border-top: none
 
 @media (min-width: 750px)
-    #site-navbar
-        font-size: 1.6rem
+  #site-navbar
+    font-size: 1.6rem
 
-    #site-title
-        max-width: 40%
-        font-size: $base * 2
+  #site-title
+    max-width: 40%
+    font-size: $base * 2
 
 @media (min-width: 1000px)
-    body
-        background-color: #eeeeee
+  body
+    background-color: #eeeeee

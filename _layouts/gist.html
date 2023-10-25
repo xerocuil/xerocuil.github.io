@@ -8,10 +8,9 @@ layout: main
 
 {{ content }}
 
-{% if page.hide_preview == False %}
 <hr>
-<p><strong>Code</strong></p>
-<script src="{{ page.source }}.js"></script>
-{% endif %}
+<div>
+  <a href="{{ page.source }}" target="_blank">View on Github</a> / <a href="{{ page.download }}" download>Download</a>
+</div>
 
 
